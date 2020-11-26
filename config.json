@@ -1,0 +1,19 @@
+{
+    "CMHCcalculationData": [{
+        "downPaymentRangePercentageStart": 5,
+        "downPaymentRangePercentageEnd": 9.99,
+        "CMHCPercent": 0.040
+    }, {
+        "downPaymentRangePercentageStart": 10,
+        "downPaymentRangePercentageEnd": 14.99,
+        "CMHCPercent": 0.031
+    }, {
+        "downPaymentRangePercentageStart": 15,
+        "downPaymentRangePercentageEnd": 19.99,
+        "CMHCPercent": 0.028
+    }, {
+        "downPaymentRangePercentageStart": 20,
+        "downPaymentRangePercentageEnd": 100,
+        "CMHCPercent": 0
+    }]
+}
