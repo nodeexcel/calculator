@@ -51,6 +51,7 @@ router.post('/mortgage', async (req, res) => {
       res.json({
         message: "success!",
         principal,
+        totalPay : parseFloat(withExtraPay.toFixed(2)),
         SumOfInterest : parseFloat(normalPaymentMethod.interest.toFixed(2)),
         extraPayment : extraPaymentMethod.extraPayment,
         Payment : parseFloat(newPayment.toFixed(2)),
@@ -72,6 +73,7 @@ router.post('/mortgage', async (req, res) => {
       res.json({
         message: "success!",
         principal,
+        totalPay : parseFloat(withExtraPay.toFixed(2)),
         SumOfInterest : parseFloat(monthlyExtraPaymentMethod.interest.toFixed(2)),
         Payment : parseFloat(newPayment.toFixed(2)),
         extraPayment : monthlyExtraPaymentMethod.extraPayment,
@@ -92,6 +94,7 @@ router.post('/mortgage', async (req, res) => {
       res.json({
         message: "success!",
         principal,
+        totalPay : parseFloat(withExtraPay.toFixed(2)),
         SumOfInterest :  parseFloat(WeeklyExtraPaymentMethod.interest.toFixed(2)),
         Payment : parseFloat(newPayment.toFixed(2)),
         extraPayment : WeeklyExtraPaymentMethod.extraPayment,
